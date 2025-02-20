@@ -26,8 +26,8 @@ sudo apt update && sudo apt install -y build-essential devscripts debhelper dh-m
 
 1. Clone repository:
 ```bash
-git clone https://github.com/OctoBanon-Main/somefetch-deb-recipe.git
-cd somefetch-deb-recipe
+git clone https://github.com/OctoBanon-Main/somefetch-debian.git
+cd somefetch-debian
 ```
 
 2. Ensure the `debian/` directory is present and properly configured.
