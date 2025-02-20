@@ -63,6 +63,12 @@ And run the program with the command:
 somefetch
 ```
 
+## License
+
+This Debian packaging script is licensed under the BSD-3-Clause License, the same as the upstream project.
+See the LICENSE file in this repository or refer to the upstream project:
+[https://github.com/UnixAwesomes/somefetch](https://github.com/UnixAwesomes/somefetch).
+
 ## See also
 
 - [somefetch](https://github.com/UnixAwesomes/somefetch) - Minimalistic fetch for unix-like systems by UnixAwesomes
