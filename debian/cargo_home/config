@@ -1,8 +1,0 @@
-[source.crates-io]
-replace-with = "dh-cargo-registry"
-
-[source.dh-cargo-registry]
-directory = "/home/octobanon/somefetch-deb-recipe/debian/cargo_registry"
-
-[build]
-rustflags = ['-C', 'debuginfo=2', '--cap-lints', 'warn', '-C', 'linker=x86_64-linux-gnu-gcc', '-C', 'link-arg=-Wl,-z,relro', '--remap-path-prefix', '/home/octobanon/somefetch-deb-recipe=/usr/share/cargo/registry/somefetch-0.2.1', '--remap-path-prefix', '/home/octobanon/somefetch-deb-recipe/debian/cargo_registry=/usr/share/cargo/registry']
