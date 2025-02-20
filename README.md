@@ -24,6 +24,43 @@ sudo apt update && sudo apt install -y build-essential devscripts debhelper dh-m
 
 ## Steps to Build
 
+1. Clone repository:
+```bash
+git clone https://github.com/OctoBanon-Main/somefetch-deb-recipe.git
+cd somefetch-deb-recipe
+```
+
+2. Ensure the debian/ directory is present and properly configured.
+
+3. Fetch the upstream source:
+```bash
+uscan --download-current-version
+````
+
+4. Build the package using dpkg-buildpackage:
+```bash
+dpkg-buildpackage -us -uc
+```
+or with GPG sign
+```bash
+dpkg-buildpackage -k"youremail@example.com (or GPG key ID)"
+```
+
+1. After a successful build, the .deb package will be available in the parent directory.
+
+## Testing package
+To install and test the build package, run:
+```bash
+sudo apt install ./somefetch_*.deb
+```
+or
+```bash
+sudo dpkg -i ./somefetch_*.deb
+```
+And run the program with the command:
+```bash
+somefetch
+```
 
 ## See also
 
