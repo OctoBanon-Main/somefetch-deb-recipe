@@ -1,0 +1,31 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --with=cargo --buildsystem=cargo
+
+override_dh_auto_configure:
+	@echo "=== Rust toolchain ==="
+	@rustc --version
+	@cargo --version
+	
+	@echo "\n=== Cargo.toml dependencies ==="
+	@grep -E '^name|^version|colored =' Cargo.toml
+	
+	dh_auto_configure -- --locked
+
+override_dh_auto_build:
+	dh_auto_build -- --release --locked
+
+override_dh_auto_test:
+	true
+
+override_dh_auto_install:
+	dh_auto_install
+
+override_dh_clean:
+	dh_clean
+	rm -rf .cargo target debian/cargo_registry
+
+override_dh_auto_dep8:
+	@echo "=== Checking Cargo.toml dependencies ==="
+	@cargo check --locked

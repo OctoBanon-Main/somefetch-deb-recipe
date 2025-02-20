@@ -1,0 +1,12 @@
+somefetch (0.2.1-1) unstable; urgency=low
+
+  * no changes in Debian packaging.
+  * new upstream version: 0.2.1
+
+ -- Maksim Bengraf <me@octobanon.com>  Thu, 20 Feb 2025 19:13:00 +0700
+
+somefetch (0.2.0-1) unstable; urgency=low
+
+  * Initial release
+
+ -- Maksim Bengraf <me@octobanon.com>  Wed, 19 Feb 2025 18:27:00 +0700

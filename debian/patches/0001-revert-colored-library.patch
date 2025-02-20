@@ -1,0 +1,16 @@
+Description: Revert colored library from 3.0.0 to 2.0.0 for compatibility with Rust 1.63.0 from Debian stable repositories.
+
+Origin: other
+Forwarded: not-needed
+Applied-Upstream: 0.2.0, commit:https://github.com/UnixAwesomes/somefetch/commit/671bd3d1f5bd768739337e9402ba19c9db18f3b7
+Reviewed-By: Maksim Bengraf <me@octobanon.com>
+Last-Update: 2025-02-20
+
+--- somefetch-0.2.1.orig/Cargo.toml
++++ somefetch-0.2.1/Cargo.toml
+@@ -9,4 +9,4 @@ edition = "2021"
+ # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+ 
+ [dependencies]
+-colored = "3.0.0"
++colored = "2.0.0"

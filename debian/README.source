@@ -1,0 +1,15 @@
+somefetch for Debian
+-------------------
+
+This package is built using the standard Debian Rust packaging workflow with `cargo`.
+
+### Changes from upstream:
+- The `colored` dependency has been downgraded from **2.1.0** to **1.9.4**  
+  for compatibility with Rust **1.63.0** in Debian repositories.
+
+### Building the package:
+To build the package, run:
+`dpkg-buildpackage` (with signing enabled if needed)
+
+ -- OctoBanon <me@octobanon.com>  Wed, 19 Feb 2025 14:35:23 +0700
+

@@ -1,0 +1,5 @@
+22516faf73a97b50841a5035b532932b  usr/bin/somefetch
+48a6b11dda5b165e6fdffd5cce0c90f2  usr/share/doc/somefetch/README.Debian
+a4bcdfacbbc835df2969803f82bca35e  usr/share/doc/somefetch/changelog.Debian.gz
+9f294e0486751ef26aa4e9cd71851427  usr/share/doc/somefetch/copyright
+89952dca398dd5bc17ad3aa9531a0688  usr/share/man/man1/somefetch.1.gz

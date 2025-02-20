@@ -1,0 +1,14 @@
+somefetch for Debian
+--------------------
+
+somefetch is a tool for displaying system information in the terminal.
+
+### Changes in the Debian package:
+- The `colored` library version has been downgraded from **2.1.0** to **1.9.4**  
+  to ensure compatibility with Rust **1.63.0** available in the Debian repositories.
+
+### Additional information:
+- Man page: `somefetch(1)`
+- Official repository: [https://github.com/UnixAwesomes/somefetch](https://github.com/UnixAwesomes/somefetch)
+
+ -- Maksim Bengraf <me@octobanon.com>  Wed, 19 Feb 2025 14:35:23 +0700

@@ -1,0 +1,41 @@
+.TH SOMEFETCH 1 "2025-02-18" "v0.2.0" "User's Manual"
+.SH NAME
+somefetch \- Simple system information fetcher for Unix-like systems
+.SH SYNOPSIS
+.B somefetch
+.SH DESCRIPTION
+.B somefetch
+is a simple command-line utility designed to fetch and display basic system information, including:
+.IP \[bu] 2
+Kernel name
+.IP \[bu] 2
+CPU model
+.IP \[bu] 2
+Hostname
+.IP \[bu] 2
+Installed packages
+.PP
+It is intended for Unix-like systems, providing a minimalistic overview of the system state.
+Running the command without options displays the information in a readable format.
+.SH OPTIONS
+This program does not accept any command-line options.
+.SH EXAMPLES
+To display system information:
+.PP
+.RS
+$ somefetch
+.RE
+.SH SEE ALSO
+.B uname(1),
+.B hostname(1),
+.B sysctl(8),
+.B dpkg-query(1)
+.SH AUTHOR
+Written by UnixAwesomes.
+.SH BUGS
+Report bugs and feature requests at:
+<https://github.com/UnixAwesomes/somefetch/issues>.
+Patches are welcome!
+.SH HOMEPAGE
+Visit <https://github.com/UnixAwesomes/somefetch> for source code and updates.
+

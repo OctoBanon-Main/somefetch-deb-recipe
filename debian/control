@@ -1,0 +1,19 @@
+Source: somefetch
+Section: utils
+Priority: optional
+Maintainer: Maksim Bengraf <me@octobanon.com>
+Uploaders: UnixAwesomes <totalslinux@gmail.com>
+Rules-Requires-Root: no
+Build-Depends:
+ debhelper-compat (= 13), dh-cargo, librust-colored-dev
+Standards-Version: 4.6.2
+Homepage: https://github.com/UnixAwesomes/somefetch
+
+Package: somefetch
+Architecture: any
+Depends:
+ ${misc:Depends}, ${shlibs:Depends}
+Description: Simple fetch tool for Unix-like systems
+ This tool displays basic system information such as hostname,
+ kernel version, shell, and more. It is designed to be lightweight,
+ easy to use, and provide a quick summary of the system's state.

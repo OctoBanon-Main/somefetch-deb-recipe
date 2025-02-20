@@ -1,0 +1,13 @@
+Package: somefetch
+Version: 0.2.1-1
+Architecture: amd64
+Maintainer: Maksim Bengraf <me@octobanon.com>
+Installed-Size: 421
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Section: utils
+Priority: optional
+Homepage: https://github.com/UnixAwesomes/somefetch
+Description: Simple fetch tool for Unix-like systems
+ This tool displays basic system information such as hostname,
+ kernel version, shell, and more. It is designed to be lightweight,
+ easy to use, and provide a quick summary of the system's state.

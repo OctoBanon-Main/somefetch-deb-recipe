@@ -1,0 +1,5 @@
+cargo:Built-Using=rust-colored (= 2.0.0-1), rustc (= 1.63.0+dfsg1-2)
+cargo:X-Cargo-Built-Using=rust-atty (= 0.2.14-2), rust-colored (= 2.0.0-1), rust-lazy-static (= 1.4.0-2), rust-libc (= 0.2.139-1), rustc (= 1.63.0+dfsg1-2)
+shlibs:Depends=libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+misc:Depends=
+misc:Pre-Depends=
