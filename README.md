@@ -30,7 +30,7 @@ git clone https://github.com/OctoBanon-Main/somefetch-deb-recipe.git
 cd somefetch-deb-recipe
 ```
 
-2. Ensure the debian/ directory is present and properly configured.
+2. Ensure the `debian/` directory is present and properly configured.
 
 3. Fetch the upstream source:
 ```bash
