@@ -1,6 +1,6 @@
 # Debian Package Build Instructions for Somefetch
 
-**"Instructions for building a Debian package for Somefetch**
+**Instructions for building a Debian package for Somefetch**
 
 This guide provides steps to fetch the upstream source, configure the package, and build a `.deb` file for Debian-based systems.
 
