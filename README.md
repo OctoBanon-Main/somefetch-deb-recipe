@@ -35,6 +35,7 @@ cd somefetch-debian
 3. Fetch the upstream source:
 ```bash
 uscan --download-current-version
+tar xf ../somefetch_*.orig.tar.gz --strip-components=1
 ````
 
 4. Build the package using dpkg-buildpackage:
