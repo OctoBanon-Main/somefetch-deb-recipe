@@ -46,7 +46,7 @@ or with GPG sign
 dpkg-buildpackage -k"youremail@example.com (or GPG key ID)"
 ```
 
-1. After a successful build, the .deb package will be available in the parent directory.
+5. After a successful build, the .deb package will be available in the parent directory.
 
 ## Testing package
 To install and test the build package, run:
