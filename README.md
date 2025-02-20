@@ -1,20 +1,22 @@
-# Somefetch Debian package build recipe
+# Debian Package Build Instructions for Somefetch
 
-**"Recipe" for building deb package for somefetch**
+**"Instructions for building a Debian package for Somefetch**
+
+This guide provides steps to fetch the upstream source, configure the package, and build a `.deb` file for Debian-based systems.
 
 ## Prerequisites
 
 Before building the project, ensure you have the following installed:
 
-`build-essential`
+- `build-essential`
 
-`devscripts`
+- `devscripts`
 
-`debhelper`
+- `debhelper`
 
-`dh-make`
+- `dh-make`
 
-`dh-cargo`
+- `dh-cargo`
 
 You can install them using:
 
@@ -36,15 +38,15 @@ cd somefetch-debian
 ```bash
 uscan --download-current-version
 tar xf ../somefetch_*.orig.tar.gz --strip-components=1
-````
+```
 
-4. Build the package using dpkg-buildpackage:
+4. Build the package using `dpkg-buildpackage`:
 ```bash
 dpkg-buildpackage -us -uc
 ```
 or with GPG sign
 ```bash
-dpkg-buildpackage -k"youremail@example.com (or GPG key ID)"
+dpkg-buildpackage -k"youremail@example.com" # Replace with your email or GPG key ID
 ```
 
 5. After a successful build, the .deb package will be available in the parent directory.
